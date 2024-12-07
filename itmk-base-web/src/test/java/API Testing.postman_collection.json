@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "ba6e09de-5fc7-40a5-b5a1-b3749f92a37a",
+		"name": "API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40223113"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/api/reader/123456",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"readerId\": 1,\r\n    \"username\": \"updatedUser\",\r\n    \"password\": \"newPassword123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/resetPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"readerId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/resetPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/getApplyReaderCount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/getApplyReaderCount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"getApplyReaderCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/getReaderCount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userType\": \"reader\",\r\n    \"userId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/getReaderCount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"getReaderCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/getByUserName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"testUser\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/getByUserName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"getByUserName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1,\r\n    \"size\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/applyReader",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"readerId\": 1,\r\n    \"username\": \"updatedUser\",\r\n    \"password\": \"newPassword123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/applyReader",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"applyReader"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"readerId\": 1,\r\n    \"username\": \"updatedUser\",\r\n    \"password\": \"newPassword123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"newUser\",\r\n    \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/api/reader/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <Your_Token>",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM0NTYiLCJ1c2VyVHlwZSI6IjAiLCJleHAiOjE3MzM1NTM5OTUsImlhdCI6MTczMzU1MjE5NTc3Nn0.3x7zOIEKbmRFyscPdX1zZt4sceq00nGavoO3-YDU3-iq5J1TsDIb95W5CCGcff4nuKkYurPJZ2dZAelMunaCAg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"testUser\",\r\n    \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/reader/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"reader",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
